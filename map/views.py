@@ -5,6 +5,9 @@ from map.models import Excavations
 def index(request):
     return render(request, 'index.html')
 
+def about(request):
+    return render(request, 'about.html')
+
 def get_excavation_data(request, inspire_id):
     try:
         excavation = Excavations.objects.get(INSPIRE_ID=inspire_id)

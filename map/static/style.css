@@ -4,7 +4,6 @@ html, body {
 
 .leaflet-container {
     height: 90vh;
-    zoom: 200%!important;
 }
 
 .leaflet-image-layer{
