@@ -1,3 +1,27 @@
+html, body {
+  font-family: "Trebuchet MS", Helvetica, sans-serif!important;
+}
+
 .leaflet-container {
-  height: 100vh;
+    height: 90vh;
+    zoom: 200%!important;
+}
+
+.leaflet-image-layer{
+  filter: invert(12%) sepia(80%) saturate(6665%) hue-rotate(358deg) brightness(111%) contrast(115%);
+}
+
+.navbar{
+  background-color: #7f462c;
+  min-height: 10vh;
+}
+
+#logo{
+  filter: invert(100%) sepia(97%) saturate(0%) hue-rotate(4deg) brightness(103%) contrast(103%);
+  height:4vh;
+  min-height: 36px;
+}
+
+.smallname{
+  font-size: xx-small!important;
 }
