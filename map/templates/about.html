@@ -4,40 +4,72 @@
 
 {% block content %}
 
-    <div class="container-fluid mt-4 ml-0 d-flex justify-content-center">
-        <div class="row d-flex justify-content-center">
-            <div class="col-md-6 text-center">
-                <h2>ABOUT</h2>
-                <p>Interactive map of archaeological sites in Poland as provided by dane.gov.pl website. Coordinates are provided via WMS service. Information about every place is stored in sqlite3 database and loaded upon click on a specific point.</p>
+<div class="about-page">
+    <div class="row">
+        <div class="small-card-container d-flex justify-content-center">
 
-                <h3>DATA USED</h3>
-                <ul class="list-unstyled">
-                    <li><a class="text-decoration-none text-black" href="https://dane.gov.pl/pl/dataset/210,rejestr-zabytkow-archeologicznych">Archaeological sites in Poland provided via WMS service and CSV file</a></li>
-                    <li><a class="text-decoration-none text-black" href="https://creativecommons.org/licenses/by/4.0/legalcode.pl">Data from dane.gov.pl used under the CC BY 4.0 licence</a></li>
-                    <li>Maps provided by Google Maps API</li>
-                </ul>
+            <div class="small-card">
+                <div class="small-card-content">
+                    <p>DATA</p>
+                    <hr>
+                    <ul class="list-unstyled">
+                        <li><a class="text-decoration-none text-black" href="https://dane.gov.pl/pl/dataset/210,rejestr-zabytkow-archeologicznych">• Excavations in Poland via WMS service and CSV file</a></li>
+                        <li><a class="text-decoration-none text-black" href="https://creativecommons.org/licenses/by/4.0/legalcode.pl">• Data from dane.gov.pl used under the CC BY 4.0 licence</a></li>
+                        <li>• Maps provided by Google Maps API</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="small-card">
+                <div class="small-card-content">
+                    <p>LIBRARIES</p>
+                    <hr>
+                    <ul class="list-unstyled">
+                        <li><a class="text-decoration-none text-black" href="https://www.djangoproject.com/">• Django</a></li>
+                        <li><a class="text-decoration-none text-black" href="https://leafletjs.com/">• Leaflet.js</a></li>
+                        <li><a class="text-decoration-none text-black" href="https://github.com/heigeo/leaflet.wms">• Leaflet.wms.js</a></li>
+                        <li><a class="text-decoration-none text-black" href="https://gitlab.com/IvanSanchez/Leaflet.GridLayer.GoogleMutant">• Leaflet.GridLayer.GoogleMutant</a></li>
+                        <li><a class="text-decoration-none text-black" href="https://requirejs.org/">• Require.js</a></li>
+                        <li><a class="text-decoration-none text-black" href="https://getbootstrap.com/">• Bootstrap</a></li>
+                    </ul>
+                </div>
+            </div>
 
-                <h3>LIBRARIES</h3>
-                <ul class="list-unstyled">
-                    <li><a class="text-decoration-none text-black" href="https://www.djangoproject.com/">Django</a></li>
-                    <li><a class="text-decoration-none text-black" href="https://leafletjs.com/">Leaflet.js</a></li>
-                    <li><a class="text-decoration-none text-black" href="https://github.com/heigeo/leaflet.wms">Leaflet.wms.js</a></li>
-                    <li><a class="text-decoration-none text-black" href="https://gitlab.com/IvanSanchez/Leaflet.GridLayer.GoogleMutant">Leaflet.GridLayer.GoogleMutant</a></li>
-                    <li><a class="text-decoration-none text-black" href="https://requirejs.org/">Require.js</a></li>
-                    <li><a class="text-decoration-none text-black" href="https://getbootstrap.com/">Bootstrap</a></li>
-                </ul>
+            <div class="small-card">
+                <div class="small-card-content">
+                    <p>CREDITS</p>
+                    <hr>
+                    <ul class="list-unstyled">
+                        <li>• Icon by <a class="text-decoration-none text-black" href="https://www.iconfinder.com/icons/9272090/history_ancient_time_once_upon_a_time_icon">Shiraz Jamal</a> on Iconfinder</li>
+                    </ul>
+                </div>
+            </div>
 
-                <h3>CREDITS</h3>
-                <ul class="list-unstyled">
-                    <li>Icon by <a class="text-decoration-none text-black" href="https://www.iconfinder.com/icons/9272090/history_ancient_time_once_upon_a_time_icon">Shiraz Jamal</a> on Iconfinder</li>
-                </ul>
+        </div>       
+    </div>
 
-                <h3>GITHUB</h3>
+    <div class="d-flex justify-content-center">
+        <div class="big-card-container">
+
+            <div class="big-card d-flex justify-content-center">
+                <div class="big-card-content">
+                <p>ABOUT</p>
+                <div>Interactive map of archaeological sites in Poland as provided by dane.gov.pl website. Coordinates are parsed via WMS service. Information about every place is stored in sqlite3 database and loaded upon click on a specific point.</div>
+                </div>
+            </div>
+
+            <div class="big-card d-flex justify-content-center">
+                <div class="big-card-content">
+                <p>GITHUB</p>
                 <ul class="list-unstyled">
                     <li><a class="text-decoration-none text-black" href="https://github.com/f4rys/Archaeological-sites-in-Poland">https://github.com/f4rys/Archaeological-sites-in-Poland</a></li>
                 </ul>
-
+                </div>
             </div>
+
+        </div>
     </div>
+
+</div>
 
 {% endblock content %}
