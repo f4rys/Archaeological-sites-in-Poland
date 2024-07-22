@@ -10,7 +10,10 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Excavations',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('id', models.BigAutoField(auto_created=True,
+                                           primary_key=True,
+                                           serialize=False,
+                                           verbose_name='ID')),
                 ('INSPIRE_ID', models.TextField(max_length=255)),
                 ('CHRONOLOGIA', models.TextField(max_length=255)),
                 ('FUNKCJA', models.TextField(max_length=255)),
