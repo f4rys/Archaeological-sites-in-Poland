@@ -6,3 +6,5 @@ class Excavations(models.Model):
     FUNKCJA = models.TextField(max_length=255)
     MIEJSCOWOSC = models.TextField(max_length=255)
     LINK = models.TextField(max_length=255)
+
+    objects = models.Manager()

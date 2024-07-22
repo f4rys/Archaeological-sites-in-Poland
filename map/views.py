@@ -1,6 +1,9 @@
-from django.shortcuts import render
+from django.core.exceptions import ObjectDoesNotExist
 from django.http import JsonResponse
+from django.shortcuts import render
+
 from map.models import Excavations
+
 
 def index(request):
     return render(request, 'index.html')
@@ -18,5 +21,5 @@ def get_excavation_data(request, inspire_id):
             'Link': excavation.LINK
         }
         return JsonResponse(data)
-    except Excavations.DoesNotExist:
+    except ObjectDoesNotExist:
         return JsonResponse({'error': 'Excavation not found'}, status=404)
