@@ -1,28 +1,16 @@
 import os
 from pathlib import Path
+from dotenv import load_dotenv
+
+load_dotenv()
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-with open(BASE_DIR / "secret_key.txt") as f:
-    SECRET_KEY = f.read().strip()
+SECRET_KEY = os.getenv('GOOGLE_MAPS_API_KEY')
 
 # Security
 
-DEBUG = False
-
-ALLOWED_HOSTS = ['excavations.pythonanywhere.com']
-
-SECURE_HSTS_SECONDS = 518400
-
-SECURE_SSL_REDIRECT = True
-
-SESSION_COOKIE_SECURE = True
-
-CSRF_COOKIE_SECURE = True
-
-SECURE_HSTS_INCLUDE_SUBDOMAINS = True
-
-SECURE_HSTS_PRELOAD = True
+DEBUG = True
 
 # Application definition
 
