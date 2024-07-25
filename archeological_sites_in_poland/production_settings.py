@@ -14,7 +14,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['excavations.pythonanywhere.com']
+ALLOWED_HOSTS = ['archaeological-sites-in-poland-production.up.railway.app']
 
 SECURE_HSTS_SECONDS = 518400
 
