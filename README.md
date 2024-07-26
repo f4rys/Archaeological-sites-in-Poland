@@ -2,26 +2,21 @@
 
 # Archaeological sites in Poland
 
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white) ![Leaflet](https://img.shields.io/badge/Leaflet-199900.svg?style=for-the-badge&logo=Leaflet&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=for-the-badge&logo=JavaScript&logoColor=black) ![PythonAnywhere](https://img.shields.io/badge/pythonanywhere-%232F9FD7.svg?style=for-the-badge&logo=pythonanywhere&logoColor=151515)
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white) ![Leaflet](https://img.shields.io/badge/Leaflet-199900.svg?style=for-the-badge&logo=Leaflet&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=for-the-badge&logo=JavaScript&logoColor=black) ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) ![Railway](https://img.shields.io/badge/Railway-0B0D0E.svg?style=for-the-badge&logo=Railway&logoColor=white)
 
-[![Django CI](https://github.com/f4rys/Archaeological-sites-in-Poland/actions/workflows/django.yml/badge.svg)](https://github.com/f4rys/Archaeological-sites-in-Poland/actions/workflows/django.yml)
+[![Django CI](https://github.com/f4rys/Archaeological-sites-in-Poland/actions/workflows/django.yml/badge.svg)](https://github.com/f4rys/Archaeological-sites-in-Poland/actions/workflows/django.yml) [![CodeQL](https://github.com/f4rys/Archaeological-sites-in-Poland/actions/workflows/codeql.yml/badge.svg)](https://github.com/f4rys/Archaeological-sites-in-Poland/actions/workflows/codeql.yml) ![Website](https://img.shields.io/website?url=https%3A%2F%2Fexcavations-in-poland.up.railway.app%2F)
 
-Interactive map of archaeological sites in Poland as provided by dane.gov.pl website. Markers are parsed via the WMS service. Information about every place is stored in the sqlite3 database and loaded upon click on a specific point. The application is hosted on PythonAnywhere.
+Interactive map of archaeological sites in Poland as provided by dane.gov.pl website. Markers are parsed via the WMS service. Information about every place is stored in the sqlite3 database and loaded upon click on a specific point. The application is hosted via Docker container on Railway.
 
 <div align="center"><img src="preview.jpg"></div>
 
 ## Data used
-<div>• <a href="https://dane.gov.pl/pl/dataset/210,rejestr-zabytkow-archeologicznych">Archaeological sites in Poland provided via WMS service and CSV file</a></div>
-<div>• <a href="https://creativecommons.org/licenses/by/4.0/legalcode.pl">Data from dane.gov.pl used under the CC BY 4.0 license</a></div>
-<div>• Maps provided by OpenStreetMap and Esri</div>
+Archaeological sites in Poland provided via <a href="https://dane.gov.pl/pl/dataset/210,rejestr-zabytkow-archeologicznych/resource/56490/table">WMS</a> service and <a href="https://dane.gov.pl/pl/dataset/210,rejestr-zabytkow-archeologicznych/resource/59097/table?page=1&per_page=20&q=&sort=">CSV</a> file and used under the <a href="https://creativecommons.org/licenses/by/4.0/legalcode.pl">CC BY 4.0 license</a>. Maps are provided by <a href="https://osmfoundation.org/">OpenStreetMap Foundation</a> under the <a href="https://opendatacommons.org/licenses/odbl/1-0/">Open Data Commons Open Database License</a>.
 
-## Libraries
-<div>• <a href="https://www.djangoproject.com/">Django</a></div>
-<div>• <a href="https://leafletjs.com/">Leaflet.js</a></div>
-<div>• <a href="https://github.com/heigeo/leaflet.wms">Leaflet.wms.js</a></div>
-<div>• <a href="https://github.com/leaflet-extras/leaflet-providers">Leaflet providers</a></div>
-<div>• <a href="https://requirejs.org/">Require.js</a></div>
-<div>• <a href="https://getbootstrap.com/">Bootstrap</a></div>
+## Tech Stack
+**Backend:** Python (Django), SQLite3 <br />
+**Frontend:** JavaScript (Leaflet.js, Require.js), Bootstrap <br />
+**Hosting:** Railway (Docker)
 
 ## Run locally
 
@@ -48,6 +43,8 @@ Interactive map of archaeological sites in Poland as provided by dane.gov.pl web
    python manage.py runserver
    http://127.0.0.1:8000/
    ```
+
+Or just use the Dockerfile.
 
 ## Credits
 <div>• Icon by <a href="https://www.iconfinder.com/icons/4791027/acropolis_ancient_building_greek_landmark_parthenon_icon">Royyan Wijaya</a> on Iconfinder</div>
