@@ -18,8 +18,6 @@ ALLOWED_HOSTS = ['excavations-in-poland.up.railway.app']
 
 SECURE_HSTS_SECONDS = 518400
 
-SECURE_SSL_REDIRECT = True
-
 SESSION_COOKIE_SECURE = True
 
 CSRF_COOKIE_SECURE = True
