@@ -18,12 +18,10 @@ require.config({
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
       });
     
-      var satellite = L.tileLayer.provider('Esri.WorldImagery');
       var topographic = L.tileLayer.provider('OpenTopoMap');
   
       var basemaps = {
         'Roadmap': roadmap,
-        'Satellite': satellite,
         'Topographic': topographic,
       };
   
