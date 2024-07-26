@@ -1,1 +1,0 @@
-web: gunicorn archeological_sites_in_poland.wsgi --log-file -
