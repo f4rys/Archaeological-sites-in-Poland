@@ -28,7 +28,7 @@ require.config({
       roadmap.addTo(map);
   
       var source = wms.source(
-        "https://usluga.zabytek.gov.pl/INSPIRE_AMD/service.svc/get?",
+        "https://mapy.zabytek.gov.pl/AZP/service.svc/get?",
         {
           "format": "image/png",
           "transparent": "true",
